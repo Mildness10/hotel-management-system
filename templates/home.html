@@ -1,0 +1,13 @@
+<h1>Welcome to Robakom Hotel</h1>
+<h3>Please input the record of the customer with the aid of the form below:</h3>
+
+<hr>
+<br>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <strong><i>{{ form.as_p }}</i></strong>
+
+    <input type="submit" value="Submit">
+</form>
